@@ -1,4 +1,4 @@
-# 📝 Daily Standup Guide
+# Welcome to our Daily Standup Guide!
 
 > A brief daily meeting for team members to share progress, surface blockers, and align on sprint goals.
 
@@ -6,11 +6,11 @@
 
 ## ⏰ Standup Meeting Info
 
-- **Time:** [Insert time, e.g. 9:00 AM PST]
-- **Location:** [e.g. Zoom / Slack / Office Standup Circle]
+- **Time:**
+- **Participants:**
+- **Location:** 
 - **Duration:** ~15 minutes
-- **Facilitator (Today):** [Name]
-
+  
 ---
 
 ## 🎯 Standup Format (Each Team Member)
@@ -26,22 +26,4 @@ Each person answers the following three questions:
 3. **Any blockers?**  
    (Mention anything that is preventing progress)
 
----
-
-## ✅ Sample Standup Notes Template
-
-```markdown
-### 🧑‍💻 [Your Name]
-
-**Yesterday:**
-- Completed [task or feature]
-- Fixed [bug or issue]
-- Reviewed [PR or doc]
-
-**Today:**
-- Work on [task or goal]
-- Pair with [teammate] on [item]
-
-**Blockers:**
-- Waiting on [PR / design / feedback]
-- Need help with [issue]
+    
