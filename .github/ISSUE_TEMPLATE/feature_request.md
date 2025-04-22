@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Create standup.md file
 title: ''
 labels: ''
 assignees: a7mohamed
