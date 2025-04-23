@@ -19,12 +19,14 @@ body {
   }
   
   h3 {
-    color: orange;
+    color: purple;
   }
   
   section {
-    background-color: color-mix(in srgb, white 70%, skyblue 30%);
+    background-color: #d6ecff; /* fallback for validators and older browsers */
+    background-color: color-mix(in srgb, white 70%, skyblue 30%); /* satisfies wide-gamut requirement */
   }
+  
   
   /* CSS Variables & Fallbacks */
   :root {
