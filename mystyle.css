@@ -1,0 +1,226 @@
+/* mystyle.css */
+
+/* --------------- GENERAL CSS TOPICS --------------- */
+
+/* Comment: Makes the CSS easier to read */
+
+/* Color */
+body {
+    background-color: #f0f0f0;
+    color: rgba(20, 20, 20, 0.9);
+  }
+  
+  h1 {
+    color: rgb(255, 99, 71); /* tomato */
+  }
+  
+  h2 {
+    color: hsl(200, 100%, 40%);
+  }
+  
+  h3 {
+    color: orange;
+  }
+  
+  section {
+    background-color: color-mix(in srgb, white 70%, skyblue 30%);
+  }
+  
+  /* CSS Variables & Fallbacks */
+  :root {
+    --main-text: #333;
+    --fallback-text: #000;
+  }
+  
+  p {
+    color: var(--main-text, var(--fallback-text));
+  }
+  
+  /* Units */
+  main {
+    padding: 2rem;        /* relative */
+    margin: 20px;         /* absolute */
+    width: 80%;
+    max-width: 1000px;    /* absolute */
+    min-width: 300px;     /* absolute */
+    font-size: 1.2em;     /* relative */
+    line-height: 1.6;     /* relative */
+  }
+  
+  /* Box Model */
+  section {
+    margin: 10px 15px 10px 15px; /* short */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;         /* long */
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+  /* Long margin */
+  header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+    
+    /* Short padding example */
+    footer {
+        padding: 5px 10px 5px 10px;
+    }
+    
+    /* Auto margin example */
+    img {
+        display: inline;
+        margin: auto;
+    }
+  
+  /* Text */
+  h1, h2, h3 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* Display */
+  header, footer {
+    display: none;
+  }
+  
+  nav {
+    display: inline-block;
+  }
+  
+  form {
+    display: none;
+  }
+  
+  /* Sizing */
+  img {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    min-width: 100px;
+  }
+  
+  /* Position */
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+  
+  /* Pseudo-class */
+  a:hover {
+    color: red;
+  }
+  a:active {
+    font-weight: bold;
+  }
+  
+  /* Layouts - Flexbox */
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  /* Layouts - Grid */
+  ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li {
+        width: 100%;
+    }
+  }
+  
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* --------------- SELECTORS --------------- */
+  
+  /* Class Selector */
+  .title {
+    color: blue;
+  }
+  
+  /* ID Selector */
+  #name {
+    border: 1px solid #999;
+  }
+  
+  /* Universal Selector */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Element Selector */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Attribute Selector */
+  input[type="radio"] {
+    accent-color: teal;
+  }
+  
+  /* Pseudo-class Selector */
+  input:focus {
+    background-color: #ffffcc;
+  }
+  
+  /* Selector List */
+  h1, h2, h3 {
+    margin-top: 0.5em;
+  }
+  
+  /* Combinators */
+  fieldset label {
+    font-style: italic; /* Descendant */
+  }
+  
+  form > fieldset {
+    border: 2px dashed gray; /* Child */
+  }
+  
+  label + input {
+    margin-top: 5px; /* Adjacent Sibling */
+  }
+  
+  label ~ input {
+    background-color: #fffaf0; /* General Sibling */
+  }
+  
+  /* Combining Two Selectors */
+  section.main {
+    border-color: green;
+  }
+  
+  /* New Selectors */
+  section:has(img) {
+    background-color: #e6ffe6;
+  }
+  
+  /* Nested Selectors (simulated) */
+  form fieldset input[type="text"] {
+    background-color: #eef;
+  }
+  
