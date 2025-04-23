@@ -24,7 +24,6 @@ body {
   
   section {
     background-color: #d6ecff; /* fallback for validators and older browsers */
-    background-color: color(display-p3 0.8 0.9 1);
   }
   
   
